@@ -6,7 +6,7 @@
 		<title>4_pageContext</title>
 		<!-- 
 			날짜 : 2022/10/05
-			이름 : 김철학
+			이름 : 김진우
 			내용 : JSP pageContext 내장객체 실습하기
 			
 			pageContext 내장객체
