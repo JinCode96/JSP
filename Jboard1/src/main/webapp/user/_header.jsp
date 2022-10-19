@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>로그인</title>
     <link rel="stylesheet" href="/Jboard1/css/style.css"/>
+ 
 </head>
 <body>
     <div id="wrapper">
