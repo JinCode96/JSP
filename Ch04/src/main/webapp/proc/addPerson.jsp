@@ -12,11 +12,15 @@
 	// 윗 부분을 태그로 바꾸기
 %>
 
+<!-- Bean을 활용해서 데이터 수신 -->
 <jsp:useBean id="pb" class="bean.PersonBean">
 	<jsp:setProperty property="name" name="pb"/> 
 	<jsp:setProperty property="age" name="pb"/> 
 	<jsp:setProperty property="hp" name="pb"/> 
 	<jsp:setProperty property="addr" name="pb"/>
+	
+	<!-- property= "*" 하면 똑같음  -->
+	
 </jsp:useBean>
 
 <!DOCTYPE html>

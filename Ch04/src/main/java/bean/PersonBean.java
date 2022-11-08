@@ -4,7 +4,7 @@ package bean;
 public class PersonBean {
 	
 	// 속성
-	private String name;
+	private String name; // 사용자가 입력한 값을 저장
 	private String age;
 	private String hp;
 	private String addr;
