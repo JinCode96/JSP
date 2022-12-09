@@ -6,10 +6,8 @@
 		<title>2_표현언어 내장객체</title>
 		<!-- 
 			날짜 : 2022/11/08
-			이름 : 김진우
+			이름 : 김철학
 			내용 : JSP 표현언어 내장객체 실습하기
-			
-		
 		 -->
 	</head>
 	<body>
@@ -20,13 +18,11 @@
 			session.setAttribute("name", "장보고");
 			application.setAttribute("name", "강감찬");
 		%>
-		
-		<p> <!-- Scope -->
-			name : ${pageScope.name } <br>
-			name : ${requestScope.name } <br> <!-- 제일 많이 씀 -->
-			name : ${sessionScope.name } <br> <!-- 제일 많이 씀 -->
-			name : ${applicationScope.name } <br>
+		<p>
+			pageScope name : ${pageScope.name}<br/>
+			requestScope name : ${requestScope.name}<br/>
+			sessionScope name : ${sessionScope.name}<br/>
+			applicationScope name : ${applicationScope.name}<br/>		
 		</p>
-		
 	</body>
 </html>

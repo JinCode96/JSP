@@ -5,7 +5,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="kr.co.College.Bean.registerBean"%>
 <%@page import="java.util.List"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 List<registerBean> registers = new ArrayList<>();	
 
@@ -38,8 +38,8 @@ try{
 
 %>
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>수강관리</title>
@@ -145,4 +145,4 @@ try{
 			</table>
 		</section>
 	</body>
-</html>
+</jsp>

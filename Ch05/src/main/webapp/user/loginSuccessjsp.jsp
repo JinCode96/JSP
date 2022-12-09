@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	// 자동 로그인 여부에 따라 로그인 처리
 	Cookie[] cookies = request.getCookies();
@@ -17,8 +17,8 @@
 		return;
 	}
 %>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>loginSuccess</title>
@@ -30,4 +30,4 @@
 			<a href="./logout.jsp">로그아웃</a>			
 		</p>		
 	</body>
-</html>
+</jsp>

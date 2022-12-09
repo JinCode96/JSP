@@ -5,7 +5,7 @@
 <%@page import="java.sql.Connection"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="java.util.List"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	List<productBean> products = new ArrayList<>(); 
 	try{

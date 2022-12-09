@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 
 	// 전송 데이터 수신
@@ -9,8 +9,8 @@
 %>
 
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>userProc</title>
@@ -23,7 +23,7 @@
 			나이 : <%= age %><br>
 		</p>
 		
-		<a href="../1_request.jsp">뒤로가기</a>
+		<a href="./1_request.jsp">뒤로가기</a>
 		
 	</body>
-</html>
+</jsp>

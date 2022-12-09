@@ -5,7 +5,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.DriverManager"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	// 데이터베이스 작업
 	String host = "jdbc:mysql://127.0.0.1:3306/UserDB";
@@ -44,15 +44,15 @@
 		e.printStackTrace();
 	}
 %>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>user::list</title>
 	</head>
 	<body>
 		<h3>user 목록</h3>
-		<a href="../1_JDBCTest.jsp">처음으로</a>
+		<a href="./1_JDBCTest.jsp">처음으로</a>
 		<a href="./register.jsp">user 등록</a>
 		
 		<table border="1">
@@ -78,4 +78,4 @@
 		</table>
 		
 	</body>
-</html>
+</jsp>

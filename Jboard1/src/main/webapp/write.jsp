@@ -2,7 +2,6 @@
 <%@ include file="./_header.jsp" %>
 <main id="board">
     <section class="write">
-
         <form action="/Jboard1/proc/writeProc.jsp" method="post" enctype="multipart/form-data">
         	<input type="hidden" name="uid" value="<%= ub.getUid() %>"/>
             <table border="0">
@@ -20,7 +19,7 @@
                 <tr>
                     <th>파일</th>
                     <td>
-                        <input type="file" name="fname"/> <!-- 파일 첨부 가능 -->
+                        <input type="file" name="fname"/>
                     </td>
                 </tr>
             </table>

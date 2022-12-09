@@ -1,6 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>1_forward 액션태그</title>
@@ -19,4 +19,4 @@
 		<a href = "./proc/forward2.jsp">forward 태그</a>
 		
 	</body>
-</html>
+</jsp>

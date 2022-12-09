@@ -26,58 +26,66 @@
     <!--
     <Manager pathname="" />
     -->
-    <!-- 커낵션 풀 설정 -->
     
-    <Resource
-    	name="dbcp_java2_bookstore"
-    	auth="Container"
-    	type="javax.sql.DataSource"
-    	driverClassName="com.mysql.cj.jdbc.Driver"
-    	url="jdbc:mysql://127.0.0.1:3306/java2_BookStore"
-    	username="java2_admin4"
-    	password="1234"
-    	maxTotal="16"
-    	maxIdle="16"
-    	maxWaitMillis="3000"
-    />
+    <!-- 
+	커넥션 풀 설정 
+	- Tomcat - context.xml 파일에 추가
+-->
+<Resource
+	name="dbcp_UserDB"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	url="jdbc:mysql://127.0.0.1:3306/UserDB"
+	username="root"
+	password="1234"
+	maxTotal="8"
+	maxIdle="8"
+	maxWaitMillis="3000"
+	/>
+<!-- maxTotal : 풀에 생성되는 최대 커넥션 갯수 -->
+<!-- maxIdle : 풀에 유지되어야 할 커넥션 갯수 -->
+<!-- minIdle : 최소한으로 유지되어야 할 커넥션 갯수 -->
+
+<!-- 커넥션 풀 설정 -->
+<Resource
+	name="dbcp_java2_shop"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	url="jdbc:mysql://127.0.0.1:3306/java2_shop"
+	username="root"
+	password="1234"
+	maxTotal="8"
+	maxIdle="8"
+	maxWaitMillis="3000"
+	/>
+	
+<Resource
+	name="dbcp_java2_board"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	url="jdbc:mysql://127.0.0.1:3306/java2_board"
+	username="root"
+	password="1234"
+	maxTotal="8"
+	maxIdle="8"
+	maxWaitMillis="3000"
+	/>
+	
+	<Resource
+	name="dbcp_java2_BookStore"
+	auth="Container"
+	type="javax.sql.DataSource"
+	driverClassName="com.mysql.cj.jdbc.Driver"
+	url="jdbc:mysql://127.0.0.1:3306/java2_BookStore"
+	username="root"
+	password="1234"
+	maxTotal="8"
+	maxIdle="8"
+	maxWaitMillis="3000"
+	/>
     
-      <Resource
-    	name="dbcp_java2_board"
-    	auth="Container"
-    	type="javax.sql.DataSource"
-    	driverClassName="com.mysql.cj.jdbc.Driver"
-    	url="jdbc:mysql://127.0.0.1:3306/java2_board"
-    	username="java2_board"
-    	password="1234"
-    	maxTotal="16"
-    	maxIdle="16"
-    	maxWaitMillis="3000"
-    />
-    
-    <Resource
-    	name="dbcp_java2_shop"
-    	auth="Container"
-    	type="javax.sql.DataSource"
-    	driverClassName="com.mysql.cj.jdbc.Driver"
-    	url="jdbc:mysql://127.0.0.1:3306/java2_shop"
-    	username="root"
-    	password="1234"
-    	maxTotal="16"
-    	maxIdle="16"
-    	maxWaitMillis="3000"
-    />
-    
-    <Resource
-    	name="dbcp_College"
-    	auth="Container"
-    	type="javax.sql.DataSource"
-    	driverClassName="com.mysql.cj.jdbc.Driver"
-    	url="jdbc:mysql://127.0.0.1:3306/College"
-    	username="root"
-    	password="1234"
-    	maxTotal="16"
-    	maxIdle="16"
-    	maxWaitMillis="3000"
-    />
     
 </Context>

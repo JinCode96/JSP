@@ -1,6 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>forward1</title>
@@ -8,7 +8,7 @@
 	<body>
 		<h3>forward1 페이지</h3>
 	</body>
-</html>
+</jsp>
 <%
-	pageContext.forward("../1_request.jsp");
+	pageContext.forward("./1_request.jsp");
 %>

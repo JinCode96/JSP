@@ -25,9 +25,9 @@
 	
 	
 	<appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/logs/${NAME}.log</file>
+		<file>/Users/kimwoo2328/logs/${NAME}.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">	    
-			<fileNamePattern>/logs/${NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+			<fileNamePattern>/Users/kimwoo2328/logs/${NAME}-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 				<maxFileSize>1MB</maxFileSize>
 			</timeBasedFileNamingAndTriggeringPolicy>

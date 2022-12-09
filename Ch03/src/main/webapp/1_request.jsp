@@ -6,8 +6,8 @@
 		<title>1_request</title>
 		<!-- 
 			날짜 : 2022/10/05
-			이름 : 김진우
-			내용 : JSP request 내장객체 실습하기	
+			이름 : 김철학
+			내용 : JSP request 내장객체 실습하기
 			
 			request 내장객체
 			 - 클라이언트 요청 정보를 갖는 객체
@@ -17,31 +17,29 @@
 			 - 기본 데이터 전송 방식
 			 - 서버에 정보를 요청하는 방식
 			 - 전송 데이터가 주소에 노출
-			 - 속도가 빠름, 보안 약함 
 			
 			Post Method(데이터 전송 방식)
 			 - 서버에 데이터를 전송하면서 처리를 요청하는 전송방식
 			 - 전송 데이터가 요청 body에 삽입되어 전송, 데이터 노출 안됨
-			 - 속도 느림, 보안 좋음
-		 -->
+		-->
 	</head>
 	<body>
 		<h3>request 내장객체</h3>
 		
-		<h4>사용자</h4>
-		<form action="./proc/userProc.jsp" method="get"> 
-			<input type="text" name="uid" placeholder="아이디 입력"/><br> 
-			<input type="text" name="name" placeholder="이름 입력"/><br> 
-			<input type="number" name="age" placeholder="나이 입력"/><br> 
-			<input type="submit" value="전송하기"/>
+		<h4>사용자 입력</h4>
+		<form action="./proc/userProc.jsp" method="get">
+			<input type="text" name="uid" placeholder="아이디 입력"/><br/>
+			<input type="text" name="name" placeholder="이름 입력"/><br/>
+			<input type="number" name="age" placeholder="나이 입력"/><br/>
+			<input type="submit" value="전송하기"/>		
 		</form>
 		
 		<h4>회원가입</h4>
-		<form action="./proc/registerProc.jsp" method="post"> <!-- 비밀번호 모르게 하는 전송방법 post -->
+		<form action="./proc/registerProc.jsp" method="post">
 			<table border="1">
 				<tr>
 					<td>아이디</td>
-					<td><input type="text" name="uid" placeholder="아이디 입력"/></td>
+					<td><input type="text" name="id" placeholder="아이디 입력"/></td>
 				</tr>
 				<tr>
 					<td>비밀번호</td>
@@ -55,7 +53,6 @@
 					<td>생년월일</td>
 					<td><input type="date" name="birth" placeholder="생년월일 선택"/></td>
 				</tr>
-				
 				<tr>
 					<td>성별</td>
 					<td>
@@ -63,7 +60,6 @@
 						<label><input type="radio" name="gender" value="2"/>여</label>
 					</td>
 				</tr>
-				
 				<tr>
 					<td>주소</td>
 					<td>
@@ -83,7 +79,7 @@
 						<label><input type="checkbox" name="hobby" value="독서"/>독서하기</label>
 						<label><input type="checkbox" name="hobby" value="여행"/>여행하기</label>
 						<label><input type="checkbox" name="hobby" value="운동"/>운동하기</label>
-						<label><input type="checkbox" name="hobby" value="게임"/>게임하기</label>
+						<label><input type="checkbox" name="hobby" value="게임"/>게임하기</label>					
 					</td>
 				</tr>
 				<tr>
@@ -95,30 +91,13 @@
 		</form>
 		
 		<h4>사용자 정보 확인</h4>
-		
 		<p>
-			헤더정보 : <%= request.getHeader("User-Agent") %> <br/>
-			프로토콜 : <%= request.getProtocol() %> <br/>
-			서버이름 : <%= request.getServerName() %> <br/>
-			요청주소 : <%= request.getRequestURL() %> <br/>
-			요청경로 : <%= request.getRequestURI() %> <br/>
-			클라이언트 IP주소 : <%= request.getRemoteAddr() %> <br/>
+			헤더정보 : <%= request.getHeader("User-Agent") %><br/>
+			프로토콜 : <%= request.getProtocol() %><br/>
+			서버이름 : <%= request.getServerName() %><br/>
+			요청주소 : <%= request.getRequestURL() %><br/>
+			요청경로 : <%= request.getRequestURI() %><br/>
+			클라이언트 IP주소 : <%= request.getRemoteAddr() %><br/>
 		</p>
-		
-		
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

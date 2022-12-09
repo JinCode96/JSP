@@ -5,7 +5,7 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	
 	List<CustomerBean> customers = null;
@@ -42,8 +42,8 @@
 
 %>
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>customer::list</title>
@@ -51,7 +51,7 @@
 	<body>
 		<h3>고객목록</h3>
 		
-		<a href="../index.jsp">처음으로</a>
+		<a href="./index.jsp">처음으로</a>
 		<a href="./register.jsp">고객등록</a>
 		
 		<table border="1">
@@ -77,4 +77,4 @@
 		
 		</table>
 	</body>
-</html>
+</jsp>

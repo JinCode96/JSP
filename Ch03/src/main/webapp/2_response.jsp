@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,7 +6,7 @@
 		<title>2_response</title>
 		<!-- 
 			날짜 : 2022/10/05
-			이름 : 김진우
+			이름 : 김철학
 			내용 : JSP response 내장객체 실습하기
 			
 			response 내장객체

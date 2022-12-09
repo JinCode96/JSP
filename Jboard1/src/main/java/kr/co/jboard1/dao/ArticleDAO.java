@@ -17,10 +17,10 @@ import kr.co.jboard1.db.Sql;
 
 // DAO(Data Access Object) : 데이터베이스 처리 클래스
 public class ArticleDAO {
-	
-	// 로거 생성
-	Logger logger = LoggerFactory.getLogger(this.getClass());
 
+	Logger logger = LoggerFactory.getLogger(this.getClass());
+	
+	
 	private static ArticleDAO instance = new ArticleDAO();
 	public static ArticleDAO getInstance() {
 		return instance;
@@ -63,8 +63,7 @@ public class ArticleDAO {
 			
 		}catch(Exception e){
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
-			
+			logger.error(e.getMessage());
 		}
 		return parent;
 	}
@@ -83,7 +82,7 @@ public class ArticleDAO {
 			conn.close();			
 		}catch(Exception e){
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
+			logger.error(e.getMessage());
 		}
 	}
 	
@@ -129,7 +128,7 @@ public class ArticleDAO {
 			
 		}catch(Exception e){
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
+			logger.error(e.getMessage());
 		}
 		
 		return article;
@@ -140,7 +139,7 @@ public class ArticleDAO {
 		int total = 0;
 		
 		try {
-			logger.info("selectCountTotal"); // 에러난 것 로그로 확인
+			logger.info("selectCountTotal");
 			Connection conn = DBCP.getConnection();
 			Statement stmt = conn.createStatement();
 			
@@ -154,7 +153,7 @@ public class ArticleDAO {
 			conn.close();
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
+			logger.error(e.getMessage());
 		}
 		return total;
 	}
@@ -196,7 +195,7 @@ public class ArticleDAO {
 			
 		}catch(Exception e){
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
+			logger.error(e.getMessage());
 		}
 		
 		return article;
@@ -237,7 +236,6 @@ public class ArticleDAO {
 			
 		}catch(Exception e){
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 		
 		return articles;
@@ -265,7 +263,6 @@ public class ArticleDAO {
 		 	conn.close();
 		}catch(Exception e){
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 		return fb;
 	}
@@ -305,7 +302,6 @@ public class ArticleDAO {
 			
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 		
 		return comments;
@@ -324,7 +320,6 @@ public class ArticleDAO {
 			conn.close();
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 	}
 	
@@ -338,7 +333,6 @@ public class ArticleDAO {
 			conn.close();
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 	}
 	
@@ -352,7 +346,6 @@ public class ArticleDAO {
 			conn.close();
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 	}
 	
@@ -369,7 +362,6 @@ public class ArticleDAO {
 			conn.close();
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 		
 		return result;
@@ -386,7 +378,6 @@ public class ArticleDAO {
 			conn.close();
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 		
 	}
@@ -420,7 +411,6 @@ public class ArticleDAO {
 			
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 		
 		return newName;
@@ -446,7 +436,6 @@ public class ArticleDAO {
 			conn.close();
 		}catch (Exception e) {
 			e.printStackTrace();
-			logger.error(e.getMessage()); // 에러난 것 로그로 확인
 		}
 		
 		return result;

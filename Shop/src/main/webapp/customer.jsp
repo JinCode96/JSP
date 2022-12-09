@@ -5,7 +5,7 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	List<customerBean> customers = new ArrayList<>(); 
 	try{
@@ -32,8 +32,8 @@
 		e.printStackTrace();
 	}
 %>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>Insert title here</title>
@@ -63,4 +63,4 @@
 			<% } %>
 		</table>
 	</body>
-</html>
+</jsp>

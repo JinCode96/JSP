@@ -6,14 +6,13 @@
 		<title>3_out</title>
 		<!-- 
 			날짜 : 2022/10/05
-			이름 : 김진우
-			내용 : JSP response 내장객체 실습하기
+			이름 : 김철학
+			내용 : JSP out 내장객체 실습하기
 			
 			out 내장객체
 			 - JSP 출력객체
 			 - HTML 태그 및 데이터 출력
 		-->
-		
 	</head>
 	<body>
 		<h3>out 객체</h3>

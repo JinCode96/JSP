@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	// 전송 데이터 인코딩
 	request.setCharacterEncoding("UTF-8");
@@ -13,8 +13,8 @@
 	String[] hobbies = request.getParameterValues("hobby"); // 하나 이상의 데이터 수신 Values, String[]
 	
 %>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>registerProc</title>
@@ -43,6 +43,6 @@
 				}
 			%> <br/> <!-- join으로 나타냄 -->
 		</p>
-		<a href="../1_request.jsp">뒤로가기</a>
+		<a href="./1_request.jsp">뒤로가기</a>
 	</body>
-</html>
+</jsp>

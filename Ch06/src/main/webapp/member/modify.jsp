@@ -4,7 +4,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.Connection"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	// 전송 데이터 수신
 	request.setCharacterEncoding("utf-8");
@@ -38,15 +38,15 @@
 	
 %>
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8"/>
 		<title>member::modify</title>
 	</head>
 	<body>
 		<h3>member 수정</h3>
-		<a href="../1_JDBCTest.jsp">처음으로</a>
+		<a href="./1_JDBCTest.jsp">처음으로</a>
 		<a href="./list.jsp">member 목록</a>
 		<form action="./modifyProc.jsp" method="post">
 			<table border="1">
@@ -99,4 +99,4 @@
 		</form>
 		
 	</body>
-</html>
+</jsp>

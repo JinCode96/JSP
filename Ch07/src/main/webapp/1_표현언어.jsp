@@ -10,14 +10,12 @@
 			내용 : JSP 표현언어 실습하기
 			
 			표현언어(Expression Language)
-			 - MVC 패턴에 따라 JSP를 더욱 효육적으로 처리하기 위한 출력문법
-			 - JSP 내장객체를 이용해 표현언어로 출력
+			 - MVC 패턴에 따라 JSP를 더욱 효율적으로 처리하기 위한 출력문법
+			 - JSP 내장객체를 이용해 표현언어로 출력 			
 		 -->
-		
 	</head>
 	<body>
 		<h3>1.표현언어(Expression Language)</h3>
-		
 		<%
 			int num1 = 1;
 			int num2 = 2;
@@ -34,19 +32,19 @@
 		
 		<h4>표현식(Expression)</h4>
 		<p>
-			num1 : <% out.print(num1); %><br/>
-			num2 : <%= num2 %><br>
-			str1 : <%= str1 %><br>
-			str2 : <%= str2 %>
-		</p>		
+			num1 : <%= num1 %><br/>
+			num2 : <%= num2 %><br/>
+			str1 : <%= str1 %><br/>
+			str2 : <%= str2 %><br/>
+		</p>
 		
 		<h4>표현언어</h4>
 		<p>
-			num1 : ${num1} <br> <!-- 직접 참조가 안된다. setAttribute 해줘야 함 -->
-			num2 : ${num2} <br>
-			str1 : ${str1} <br>
-			str2 : ${str2} <br>
+			num1 : ${num1}<br/>
+			num2 : ${num2}<br/>
+			str1 : ${str1}<br/>
+			str2 : ${str2}<br/>
 		</p>
-		
+				
 	</body>
 </html>

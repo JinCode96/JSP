@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <% request.setCharacterEncoding("utf-8"); %>
 <jsp:useBean id="ub" class="bean.UserBean">
 	<jsp:setProperty property="id" name="ub"/>
@@ -9,8 +9,8 @@
 	<jsp:setProperty property="addr" name="ub"/>
 	<jsp:setProperty property="hobby" name="ub"/>
 </jsp:useBean>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>addUser</title>
@@ -27,6 +27,6 @@
 			취미 : <%= String.join(",", ub.getHobby()) %><br/>	
 		</p>
 		
-		<a href="../3_useBean 액션태그.jsp">뒤로가기</a>
+		<a href="./3_useBean 액션태그.jsp">뒤로가기</a>
 	</body>
-</html>
+</jsp>

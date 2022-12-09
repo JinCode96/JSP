@@ -1,6 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>cookieProc</title>
@@ -27,4 +27,4 @@
 		<a href="./cookieConfirm.jsp">쿠키확인</a>
 			
 	</body>
-</html>
+</jsp>

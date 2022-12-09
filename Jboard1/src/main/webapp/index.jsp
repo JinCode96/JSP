@@ -6,30 +6,19 @@
 	// 자바 기본 로거
 	/*
 	Logger logger = Logger.getGlobal();
-
 	logger.info("info log...");
 	logger.warning("warning log...");
 	logger.severe("severe log...");
 	*/
-	
-	// logback 로거 2022.11.3
+	// logback 로거
 	Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	logger.debug("log debug...");
-	logger.info("log info...");
-	logger.warn("log warn...");
-	logger.error("log error...");
-	
-	
 	UserBean sessUser = (UserBean)session.getAttribute("sessUser");
-
-	if(sessUser == null) {
-		
-		
+	if(sessUser == null){
 		// 로그인을 안했으면
-		pageContext.forward("./user/login.jsp");
-	}else {
-		
+		pageContext.forward("./user/login.jsp");	
+	}else{
 		// 로그인을 했으면
 		pageContext.forward("./list.jsp");
 	}

@@ -1,13 +1,13 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>user::register</title>
 	</head>
 	<body>
 		<h3>user 등록</h3>
-		<a href="../1_JDBCTest.jsp">처음으로</a>
+		<a href="./1_JDBCTest.jsp">처음으로</a>
 		<a href="./list.jsp">user 목록</a>
 		
 		<form action="./registerProc.jsp" method="post">
@@ -37,4 +37,4 @@
 		</form>
 		
 	</body>
-</html>
+</jsp>

@@ -1,6 +1,6 @@
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>2_DBCPTest</title>
@@ -19,4 +19,4 @@
 		
 		<a href="./user5/list.jsp">user5 CRUD 실습</a>		
 	</body>
-</html>
+</jsp>

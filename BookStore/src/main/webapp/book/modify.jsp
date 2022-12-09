@@ -3,7 +3,7 @@
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.Connection"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	// 전송 데이터 수신
 	request.setCharacterEncoding("utf-8");
@@ -37,8 +37,8 @@
 	}
 %>
 
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>book::modify</title>
@@ -46,7 +46,7 @@
 	<body>
 		<h3>도서수정</h3>
 		
-		<a href="../index.jsp">처음으로</a>
+		<a href="./index.jsp">처음으로</a>
 		<a href="./list.jsp">도서목록</a>
 		
 		<form action="./modifyProc.jsp" method="post">
@@ -75,4 +75,4 @@
 			</table>
 		</form>
 	</body>
-</html>
+</jsp>

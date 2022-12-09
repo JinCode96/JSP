@@ -5,7 +5,7 @@
 <%@page import="java.sql.Statement"%>
 <%@page import="kr.co.College.db.DBCP"%>
 <%@page import="java.sql.Connection"%>
-<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page contentType="text/jsp;charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	List<lectureBean> lectures = new ArrayList<>();	
 
@@ -34,8 +34,8 @@
 	}
 
 %>
-<!DOCTYPE html>
-<html>
+<!DOCTYPE jsp>
+<jsp>
 	<head>
 		<meta charset="UTF-8">
 		<title>강좌관리</title>
@@ -136,4 +136,4 @@
 			</table>
 		</section>
 	</body>
-</html>
+</jsp>

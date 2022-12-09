@@ -6,7 +6,7 @@
 		<title>4_pageContext</title>
 		<!-- 
 			날짜 : 2022/10/05
-			이름 : 김진우
+			이름 : 김철학
 			내용 : JSP pageContext 내장객체 실습하기
 			
 			pageContext 내장객체
@@ -22,7 +22,7 @@
 		<h3>pageContext 객체</h3>
 		
 		<h4>include</h4>
-		<%
+		<%			
 			pageContext.include("./inc/_header.jsp");
 			pageContext.include("./inc/_footer.jsp");
 		%>
